@@ -8,7 +8,7 @@ const api = express.Router()
 */
 
 // Get all products - GET ALL
-api.get('/product', productController.getProducts)
+api.get('/products', productController.getProducts)
 
 // Get specify product - SHOW
 api.get('/product/:id', productController.getProduct)
