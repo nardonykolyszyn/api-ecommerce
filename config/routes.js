@@ -11,15 +11,15 @@ const api = express.Router()
 api.get('/products', productController.getProducts)
 
 // Get specify product - SHOW
-api.get('/product/:id', productController.getProduct)
+api.get('/products/:id', productController.getProduct)
 
 // Create new product - NEW
-api.post('/product', productController.createProduct)
+api.post('/products', productController.createProduct)
 
 // Update specify product - UPDATE
-api.put('/product/:id', productController.updateProduct)
+api.put('/products/:id', productController.updateProduct)
 
 // Delete spificy product - DELETE
-api.delete('/product/:id', productController.deleteProduct)
+api.delete('/products/:id', productController.deleteProduct)
 
 module.exports = api
